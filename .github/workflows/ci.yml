@@ -21,9 +21,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v6.0.2
       - name: Use Node version defined in manifest
-        uses: volta-cli/action@v4
+        uses: volta-cli/action@v5
       - name: Install Node dependencies
         run: npm ci
       - name: Run Node tests
